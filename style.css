@@ -1,0 +1,536 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+}
+
+body{
+    font-family: montserrat;
+}
+
+/*Banner*/
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.6)),url(background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*Navbar*/
+
+nav{
+    height: 80px;
+    width: 100%;
+}
+
+label img{
+    height: 100px;
+    width: auto;
+    mix-blend-mode: color-burn;
+    margin-left: 20px;
+    
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color:white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover{
+    background: #815271;
+    transition: 0.5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+/*Container content*/
+
+.content_container{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+
+.content_container h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.content_container p{
+    margin: 20px auto;
+    font-size: 25px;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+/*Button*/
+
+.button-1 {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: initial;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-size: 16px;
+  font-weight: 800;
+  justify-content: center;
+  line-height: 24px;
+  margin: 0;
+  padding: 19px 26px;
+  position: relative;
+  text-align: center;
+  width: auto;
+}
+
+.button-1:before,
+.button-1:after {
+    border-radius: 80px;
+}
+
+.button-1:before {
+  background-image: linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -2;
+}
+
+.button-1:after {
+  background-color: initial;
+  background-image: linear-gradient(#541a0f 0, #0c0d0d 100%);
+  bottom: 4px;
+  content: "";
+  display: block;
+  left: 4px;
+  overflow: hidden;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  transition: all 100ms ease-out;
+  z-index: -1;
+}
+
+.button-1:hover:not(:disabled):before {
+  background: linear-gradient(92.83deg, rgb(255, 116, 38) 0%, rgb(249, 58, 19) 100%);
+}
+
+.button-1:hover:not(:disabled):after {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition-timing-function: ease-in;
+  opacity: 0;
+}
+
+/*Button design 2*/
+
+.button-2{
+    width: 150px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 800;
+    border: 5px solid rgb(255, 116, 38);
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    line-height: 24px;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    background: #c74b11;
+    height: 100%;
+    width: 0;
+    border-radius: 40px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s ease;
+}
+
+.button-2:hover span{
+    width: 100%;
+}
+
+.button-2:hover{
+    border: none;
+}
+
+/*Del 2 av webbsidan: class: info-cotainer-1*/
+
+.info-container-1{
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;   
+}
+
+h3{
+    font-weight: 500;
+    color: #121818;
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+
+.info-container-1-description{
+    max-width: 600px;
+    font-size: 20px;
+    margin: 1rem auto 1.5rem;
+}
+
+.services-container{
+    display: flex;
+    align-items: center;
+}
+
+.services h4{
+    font-weight: 500;
+    color: #121818;
+    font-size: 1.3rem;
+    margin: 1rem 0 0.6rem;
+}
+
+.services{
+    background: #fff;
+    margin: 20px;
+    padding: 40px;
+    border-radius: 4px;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid #e7e7e7;
+    transition: all 0.3s ease;
+    border-radius: 15px;
+}
+
+.services:hover {
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+}
+
+.services i {
+    font-size: 3.45rem;
+    margin: 1rem 0;
+}
+
+.container1 i,
+.container1 h4
+{
+  color: #42b7ca;
+}
+
+.container1:hover {
+    border: 2px solid #42b7ca;
+}
+
+.container2 i,
+.container2 h4
+{
+  color: #425fca;
+}
+
+.container2:hover {
+    border: 2px solid #425fca;
+}
+
+.container3 i,
+.container3 h4
+{
+  color: #9c42ca;
+}
+
+.container3:hover {
+    border: 2px solid #9c42ca;
+}
+
+.services > * {
+    flex: 1 1 100%;
+}
+
+
+/* Del tre av webbsidan: grid*/
+.info-container-2-header h2{
+    text-align: center;
+    font-weight: 500;
+    color: #121818;
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+.info-container-2-header p{
+    text-align: center;
+    max-width: 600px;
+    font-size: 20px;
+    margin: 1rem auto;
+    margin-bottom: -30px;
+}
+
+/*feature 1*/
+
+.info-container-2-1:not(.features1-button){
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.features1{
+    margin: 100px auto;
+    width: 70%;
+}
+
+.features1 img{
+    max-height: 520px;
+    border-radius: 5%;
+    float: right;
+    border: 3px solid goldenrod;
+    margin-left: 30px;
+}
+
+.features1 i{
+    font-size: 90px;
+    color:rgb(159, 36, 36);
+    border-radius: 10%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.features1-textbox h2{
+    font-size: 42px;
+    color: rgb(23, 23, 74);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.features1-textbox p{
+    font-size:  18px;
+    font-weight: 300;
+    margin-bottom: 70px;
+}
+
+.features1-button{
+    margin-top: -40px;
+}
+
+.features1-button button{
+    width: 140px;
+    height: 45px;
+    font-family:sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.features1-button button:hover{
+    background-color: #ce8d23;
+    box-shadow: 0px 15px 20px rgba(121, 149, 37, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.features1-button button a{
+    color: black;
+}
+
+
+/*feature 2: will be merged later*/
+
+
+.info-container-2-2:not(.features1-button){
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.features2{
+    margin: 100px auto;
+    width: 70%;
+}
+
+.features2 img{
+    max-height: 520px;
+    border-radius: 5%;
+    float: left;
+    border: 3px solid goldenrod;
+    margin-right: 30px;
+}
+
+.features2 i{
+    font-size: 90px;
+    color:rgb(159, 36, 36);
+    border-radius: 10%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.features2-textbox h2{
+    font-size: 42px;
+    color: rgb(23, 23, 74);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.features2-textbox p{
+    font-size:  18px;
+    font-weight: 300;
+    margin-bottom: 70px;
+}
+
+.features2-button{
+    margin-top: -40px;
+}
+
+.features2-button button{
+    width: 140px;
+    height: 45px;
+    font-family:sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.features2-button button:hover{
+    background-color: #ce8d23;
+    box-shadow: 0px 15px 20px rgba(121, 149, 37, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.features2-button button a{
+    color: black;
+}
+
+
+
+
+/*Responsive*/
+
+@media (max-width: 952px){
+    label .logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 1000;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    nav ul li a:hover{
+        background: none;
+        color: aquamarine;
+    }
+
+    #check:checked ~ul{
+        left: 0;
+    }
+
+    .button-1 {
+        padding: 19px 32px;
+    }
+
+    .services-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
