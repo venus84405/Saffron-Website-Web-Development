@@ -325,7 +325,7 @@ h3{
 
 /*feature 1: This style could be used for all even elemements where the picture is on the left side*/
 
-.info-container-2-1:not(.features1-button){
+.info-container-2-1{
     display: flex;
     justify-content: right;
     align-items: center;
@@ -401,7 +401,7 @@ h3{
 /*feature 2: This style could be used for all even elemements where the picture is on the left side*/
 
 
-.info-container-2-2:not(.features1-button){
+.info-container-2-2{
     display: flex;
     justify-content: right;
     align-items: center;
@@ -476,7 +476,7 @@ h3{
 
 /*breaker for later merge*/
 
-.info-container-2-3:not(.features1-button){
+.info-container-2-3{
     display: flex;
     justify-content: right;
     align-items: center;
@@ -563,6 +563,8 @@ h3{
 }
 
 @media (max-width: 858px){
+    
+    /*Navbar*/
     .checkbtn{
         display: block;
     }
@@ -605,5 +607,47 @@ h3{
     .services-container{
         display: flex;
         flex-direction: column;
+    }
+
+    /*banner and header*/
+
+    .content_container h1{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .content_container p{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    /*note: info-container-1 is already adapted*/
+
+    /*info-container-2*/
+    .info-container-2-header{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .features1 img{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    .features1 i{
+        /*should be completed*/
+    }
+
+    .features1-textbox h2{
+        text-align: center;
+    }
+    
+    .features1-textbox p{
+        text-align: left;
+    }
+
+    .features1-button button{
+        margin-left: 30%; /*how to center using percent*/
     }
 }
