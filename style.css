@@ -14,6 +14,7 @@ html{
 
 body{
     font-family: montserrat;
+    background:/*#f2f2f2*/;
 }
 
 /*Banner*/
@@ -325,18 +326,18 @@ h3{
 
 /*feature 1: This style could be used for all even elemements where the picture is on the left side*/
 
-.info-container-2-1{
+.info-container-2-1, .info-container-2-3{
     display: flex;
     justify-content: right;
     align-items: center;
 }
 
-.features1{
-    margin: 100px auto;
+.features1, .features3{
+    margin: 60px auto;
     width: 70%;
 }
 
-.features1 img{
+.features1 img, .features3 img{
     max-height: 520px;
     border-radius: 5%;
     float: right;
@@ -344,7 +345,7 @@ h3{
     margin-left: 30px;
 }
 
-.features1 i{
+.features1 i, .features3 i{
     font-size: 90px;
     color:rgb(159, 36, 36);
     border-radius: 10%;
@@ -352,32 +353,32 @@ h3{
     margin-top: 20px;
 }
 
-.features1-textbox h2{
+.features1-textbox h2, .features3-textbox h2{
     font-size: 42px;
     color: rgb(23, 23, 74);
     font-weight: 600;
     margin-bottom: 10px;
 }
 
-.features1-textbox p{
+.features1-textbox p, .features3-textbox p{
     font-size:  18px;
     font-weight: 300;
     margin-bottom: 70px;
 }
 
-.features1-button{
+.features1-button, .features3-button{
     margin-top: -40px;
 }
 
-.features1-button button{
+.features1-button button, .features3-button button{
     width: 140px;
     height: 45px;
     font-family:sans-serif;
-    font-size: 11px;
+    font-size: 13px;
     letter-spacing: 2px;
     font-weight: 500;
     color: #000;
-    background-color: #fff;
+    background-color: #5783db;
     border: none;
     border-radius: 45px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
@@ -386,17 +387,21 @@ h3{
     outline: none;
 }
 
-.features1-button button:hover{
+.features1-button button:hover, .features3-button button:hover{
     background-color: #ce8d23;
     box-shadow: 0px 15px 20px rgba(121, 149, 37, 0.4);
     color: #fff;
     transform: translateY(-7px);
 }
 
-.features1-button button a{
+.features1-button button a, .features3-button button a{
     color: black;
 }
 
+.features-hr{
+    width: 70%;
+    margin: auto;
+}
 
 /*feature 2: This style could be used for all even elemements where the picture is on the left side*/
 
@@ -408,7 +413,7 @@ h3{
 }
 
 .features2{
-    margin: 100px auto;
+    margin: 60px auto;
     width: 70%;
 }
 
@@ -449,11 +454,11 @@ h3{
     width: 140px;
     height: 45px;
     font-family:sans-serif;
-    font-size: 11px;
+    font-size: 13px;
     letter-spacing: 2px;
     font-weight: 500;
     color: #000;
-    background-color: #fff;
+    background-color: #5783db;
     border: none;
     border-radius: 45px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
@@ -473,80 +478,7 @@ h3{
     color: black;
 }
 
-
-/*breaker for later merge*/
-
-.info-container-2-3{
-    display: flex;
-    justify-content: right;
-    align-items: center;
-}
-
-.features3{
-    margin: 100px auto;
-    width: 70%;
-}
-
-.features3 img{
-    max-height: 520px;
-    border-radius: 5%;
-    float: right;
-    border: 3px solid goldenrod;
-    margin-left: 30px;
-}
-
-.features3 i{
-    font-size: 90px;
-    color:rgb(159, 36, 36);
-    border-radius: 10%;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-.features3-textbox h2{
-    font-size: 42px;
-    color: rgb(23, 23, 74);
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.features3-textbox p{
-    font-size:  18px;
-    font-weight: 300;
-    margin-bottom: 70px;
-}
-
-.features3-button{
-    margin-top: -40px;
-}
-
-.features3-button button{
-    width: 140px;
-    height: 45px;
-    font-family:sans-serif;
-    font-size: 11px;
-    letter-spacing: 2px;
-    font-weight: 500;
-    color: #000;
-    background-color: #fff;
-    border: none;
-    border-radius: 45px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
-    outline: none;
-}
-
-.features3-button button:hover{
-    background-color: #ce8d23;
-    box-shadow: 0px 15px 20px rgba(121, 149, 37, 0.4);
-    color: #fff;
-    transform: translateY(-7px);
-}
-
-.features3-button button a{
-    color: black;
-}
+/*Del 4 av webbsidan: split screen saffran*/
 
 
 /*Responsive*/
