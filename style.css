@@ -323,7 +323,7 @@ h3{
     margin-bottom: -30px;
 }
 
-/*feature 1*/
+/*feature 1: This style could be used for all even elemements where the picture is on the left side*/
 
 .info-container-2-1:not(.features1-button){
     display: flex;
@@ -398,7 +398,7 @@ h3{
 }
 
 
-/*feature 2: will be merged later*/
+/*feature 2: This style could be used for all even elemements where the picture is on the left side*/
 
 
 .info-container-2-2:not(.features1-button){
@@ -416,13 +416,13 @@ h3{
     max-height: 520px;
     border-radius: 5%;
     float: left;
-    border: 3px solid goldenrod;
+    border: 3px solid goldenrod; /*same color or change it to another one?*/
     margin-right: 30px;
 }
 
 .features2 i{
     font-size: 90px;
-    color:rgb(159, 36, 36);
+    color:rgb(159, 36, 36); /*same color or change it to another one?*/
     border-radius: 10%;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -474,6 +474,79 @@ h3{
 }
 
 
+/*breaker for later merge*/
+
+.info-container-2-3:not(.features1-button){
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.features3{
+    margin: 100px auto;
+    width: 70%;
+}
+
+.features3 img{
+    max-height: 520px;
+    border-radius: 5%;
+    float: right;
+    border: 3px solid goldenrod;
+    margin-left: 30px;
+}
+
+.features3 i{
+    font-size: 90px;
+    color:rgb(159, 36, 36);
+    border-radius: 10%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.features3-textbox h2{
+    font-size: 42px;
+    color: rgb(23, 23, 74);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.features3-textbox p{
+    font-size:  18px;
+    font-weight: 300;
+    margin-bottom: 70px;
+}
+
+.features3-button{
+    margin-top: -40px;
+}
+
+.features3-button button{
+    width: 140px;
+    height: 45px;
+    font-family:sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.features3-button button:hover{
+    background-color: #ce8d23;
+    box-shadow: 0px 15px 20px rgba(121, 149, 37, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.features3-button button a{
+    color: black;
+}
 
 
 /*Responsive*/
