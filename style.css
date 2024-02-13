@@ -14,7 +14,7 @@ html{
 
 body{
     font-family: montserrat;
-    background:/*#f2f2f2*/;
+    /*#f2f2f2*/
 }
 
 /*Banner*/
@@ -25,6 +25,9 @@ body{
     background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.6)),url(background.jpg);
     background-size: cover;
     background-position: center;
+    animation: banner-image-animation linear forwards;
+    animation-timeline: view();
+    animation-range: exit;
 }
 
 /*Navbar*/
@@ -221,11 +224,14 @@ span{
     padding: 30px;   
 }
 
-h3{
-    font-weight: 500;
-    color: #121818;
-    font-size: 3rem;
-    margin: 1rem 0;
+.header-h2{
+    text-align:center;
+    font-size:45px;
+    text-transform:uppercase;
+    color:#222;
+    letter-spacing:1px;
+    font-family:"Playfair Display", serif;
+    font-weight:400;
 }
 
 
@@ -480,8 +486,270 @@ h3{
 
 /*Del 4 av webbsidan: split screen saffran*/
 
+.info-container-3 .left, .info-container-3 .right{
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-container-3 .image{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    transition: 0.3s ease all;
+}
+
+.leftside{
+    background: url("split_left_image.jpg");
+}
+
+.rightside{
+    background: url("split_right_image_alt.jpg");
+}
+
+.info-container-3 .side::before{
+    background: rgba(0, 0, 0, 0.15);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    content: "";
+    display: block;
+}
+
+.info-container-3 .caption{
+    position: relative;
+    z-index: 10;
+    color: white;
+    text-align: center;
+}
+
+.info-container-3 .caption h1{
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+}
+
+.caption1 h1{
+    background-color: #333;
+}
+
+.caption2 h1{
+    background-color: white;
+    color: #333;
+}
+
+.info-container-3 .left:hover .image, .info-container-3 .right:hover .image{
+    transform: scale(1.2);
+}
+
+/*Del 5 av webbsidan: plans and price*/
+
+.info-container-4-header{
+    margin-top: 35px;
+}
+
+.info-container-4-header p{
+    margin-top: 10px;
+    text-align: center;
+    max-width: 600px;
+    font-size: 20px;
+    margin: 1rem auto;
+    margin-bottom: -40px;
+}
+
+.price-row{
+    margin-top: 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.price-col{
+    background: #333;
+    color: white;
+    padding: 5% 50px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    transition: 0.3s ease all;
+}
+
+.price-col p{
+    font-size: 22px;
+    margin-bottom: 20px;
+
+}
+
+.price-col h3{
+    font-size: 44px;
+    font-weight: 500;
+    color: white;
+}
+
+.price-col ul{
+    text-align: left;
+    margin: 20px 0;
+    color: #ddd;
+}
+
+.price-col ul li{
+    margin: 15px 0;
+}
+
+.price-col ul li::before{
+    content: "\2022";
+    color: #e33058;
+    font-weight: bold;
+    margin: 8px;
+}
+
+.price-col button{
+    width: 100%;
+    padding: 14px 0;
+    background: transparent;
+    color: white;
+    font-size: 15px;
+    border: 1px solid #e33058;
+    border-radius: 40px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.price-col button:hover{
+    background: #e33058;
+}
+
+.box2{
+    background-color: rgb(7, 49, 6);
+    scale: 1.1;
+}
+
+.price-col:hover{
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+/*.price-row:hover .price-col:not(:hover){
+    opacity: 0; wierd design
+}*/
+
+/*Animations*/
+
+.features1 img, .features2 img, .features3 img, .services{
+    scale: 0.8; opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 400px; /*kan alternativt använda animation-range:entry;*/
+}
+
+.content_container{
+    animation: fade-out linear;
+    animation-timeline: view();
+    animation-range: exit -300px;
+}
+
+@keyframes fade-in{
+    to{
+        scale: 1; opacity: 1;
+    }
+}
+
+@keyframes fade-out{
+    to{
+        opacity: 0;
+    }
+}
+
+@keyframes banner-image-animation{
+    25%{
+        opacity: 1;
+    }
+
+    85%, 100%{
+        opacity: 0;
+        /*scale can be added*/
+    }
+}
 
 /*Responsive*/
+
+@media screen and (min-width:1330px){
+    /*filling images to reduce white spots*/
+    .filling1-image{
+        max-width: 200px;
+        position: absolute;
+        right: 0;
+    }
+    
+    .filling2-image{
+        max-width: 200px;
+        position: absolute;
+        transform: rotate(180deg);
+        bottom: -30%;
+        left: 0;
+    }
+    
+    .filling3-image{
+        max-width: 200px;
+        position: absolute;
+        transform: rotate(180deg);
+        bottom: -1200px; /*väljer att sätta positionen på detta sätt för att undvika konflikt med img element i andra delar*/
+    }
+    
+    .filling4-image{
+        max-width: 200px;
+        position: absolute;
+        right: 0;
+        bottom: -1450px;
+    }    
+}
+
+@media screen and (max-width: 1330px){
+    .filling1-image, .filling2-image, .filling3-image, .filling4-image{
+        display: none;
+    }
+}
+
+@media screen and (min-width:1200px){
+    /*del 4*/
+    .info-container-3{
+        display: flex;
+    }
+
+    .info-container-3 .left, .info-container-3 .right{
+        width: 50%;
+        height: 100vh;
+    }
+
+    .price-col{
+        width: 25%; /*could be changed to a higher value*/
+    }
+
+    .price-col h3{
+        text-align: center;
+    }
+
+    .price-col p{
+        text-align: center;
+        font-weight: bold;
+        margin-top: -40px;
+    }
+
+    .price-col ul li::before{
+        margin-left: 28px;
+    }
+
+}
+
 
 @media (max-width: 952px){
     label .logo{
@@ -492,16 +760,39 @@ h3{
     nav ul li a{
         font-size: 16px;
     }
+
+    .price-row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .price-col{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .price-col ul{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .price-col {
+        flex-basis: calc(50% - 20px);
+    }
+
+    /*fix issues regarding the screen size for div elements in section 3(features)*/
+
 }
 
 @media (max-width: 858px){
-    
+
     /*Navbar*/
     .checkbtn{
         display: block;
     }
 
-    ul{
+    nav ul{
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -561,25 +852,31 @@ h3{
         margin-right: 10px;
     }
 
-    .features1 img{
+    .features1 img, .features2 img, .features3 img{
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 20px;
     }
 
-    .features1 i{
-        /*should be completed*/
+    .features1 i, .features2 i, .features3 i{
+        display: none;
     }
 
-    .features1-textbox h2{
+    .features1-textbox h2, .features2-textbox h2, .features3-textbox h2{
         text-align: center;
     }
+
+    .features1-button button,.features2-button button, .features3-button button{
+        margin-left: 30%; /*how to center using percent*/
+    }
     
-    .features1-textbox p{
-        text-align: left;
+    /*Plans and price*/
+
+    .info-container-4-header p{
+        margin-bottom: 40px;
     }
 
-    .features1-button button{
-        margin-left: 30%; /*how to center using percent*/
+    .price-col p{
+        text-align: center;
     }
 }
