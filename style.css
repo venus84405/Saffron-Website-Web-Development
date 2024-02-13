@@ -680,6 +680,72 @@ span{
     }
 }
 
+/*Footer*/
+
+footer{
+    padding: 40px 0;
+}
+
+footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: #4b4c4d;
+}
+
+footer .social a{
+    font-size: 24px;
+    color: #e33058;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+    transition: 0.2s ease all;
+}
+
+footer .social a:hover{
+    scale: 1.1;
+}
+
+footer ul{
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 28px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+footer ul a{
+    color: #333;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: 0.3s ease all;
+}
+
+footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+footer ul a:hover{
+    opacity: 1;
+    font-size: 110%
+    
+}
+
+footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+}
+
 /*Responsive*/
 
 @media screen and (min-width:1330px){
