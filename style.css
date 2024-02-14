@@ -38,7 +38,7 @@ nav{
 }
 
 label img{
-    height: 100px;
+    height: 80px;
     width: auto;
     mix-blend-mode: color-burn;
     margin-left: 20px;
@@ -65,7 +65,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    background: #815271;
+    background: #e3421c;
     transition: 0.5s;
 }
 
@@ -108,7 +108,7 @@ nav ul li a:hover{
 
 /*Button*/
 
-.button-1 {
+.button-1, .button-2 {
   align-items: center;
   background-clip: padding-box;
   background-color: initial;
@@ -123,7 +123,7 @@ nav ul li a:hover{
   font-weight: 800;
   justify-content: center;
   line-height: 24px;
-  margin: 0;
+  margin: 10px;
   padding: 19px 26px;
   position: relative;
   text-align: center;
@@ -131,11 +131,11 @@ nav ul li a:hover{
 }
 
 .button-1:before,
-.button-1:after {
+.button-1:after, .button-2:before, .button-2:after {
     border-radius: 80px;
 }
 
-.button-1:before {
+.button-1:before, .button-2:before {
   background-image: linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
   content: "";
   display: block;
@@ -148,7 +148,7 @@ nav ul li a:hover{
   z-index: -2;
 }
 
-.button-1:after {
+.button-1:after, .button-2:after {
   background-color: initial;
   background-image: linear-gradient(#541a0f 0, #0c0d0d 100%);
   bottom: 4px;
@@ -163,56 +163,17 @@ nav ul li a:hover{
   z-index: -1;
 }
 
-.button-1:hover:not(:disabled):before {
+.button-1:hover:not(:disabled):before, .button-2:hover:not(:disabled):before {
   background: linear-gradient(92.83deg, rgb(255, 116, 38) 0%, rgb(249, 58, 19) 100%);
 }
 
-.button-1:hover:not(:disabled):after {
+.button-1:hover:not(:disabled):after, .button-2:hover:not(:disabled):after {
   bottom: 0;
   left: 0;
   right: 0;
   top: 0;
   transition-timing-function: ease-in;
   opacity: 0;
-}
-
-/*Button design 2*/
-
-.button-2{
-    width: 150px;
-    padding: 15px 0;
-    text-align: center;
-    margin: 20px 10px;
-    border-radius: 40px;
-    font-size: 16px;
-    font-weight: 800;
-    border: 5px solid rgb(255, 116, 38);
-    background: transparent;
-    color: white;
-    cursor: pointer;
-    line-height: 24px;
-    position: relative;
-    overflow: hidden;
-}
-
-span{
-    background: #c74b11;
-    height: 100%;
-    width: 0;
-    border-radius: 40px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: 0.5s ease;
-}
-
-.button-2:hover span{
-    width: 100%;
-}
-
-.button-2:hover{
-    border: none;
 }
 
 /*Del 2 av webbsidan: class: info-cotainer-1*/
@@ -281,31 +242,31 @@ span{
 .container1 i,
 .container1 h4
 {
-  color: #42b7ca;
+  color: #f3ad01;
 }
 
 .container1:hover {
-    border: 2px solid #42b7ca;
+    border: 2px solid #f3ad01;
 }
 
 .container2 i,
 .container2 h4
 {
-  color: #425fca;
+  color: #e3421c;
 }
 
 .container2:hover {
-    border: 2px solid #425fca;
+    border: 2px solid #e74521;
 }
 
 .container3 i,
 .container3 h4
 {
-  color: #9c42ca;
+  color: #ab1521; /*which one?*/
 }
 
 .container3:hover {
-    border: 2px solid #9c42ca;
+    border: 2px solid #c61827;
 }
 
 .services > * {
@@ -384,7 +345,7 @@ span{
     letter-spacing: 2px;
     font-weight: 500;
     color: #000;
-    background-color: #5783db;
+    background-color: #ff725e;
     border: none;
     border-radius: 45px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
@@ -394,8 +355,8 @@ span{
 }
 
 .features1-button button:hover, .features3-button button:hover{
-    background-color: #ce8d23;
-    box-shadow: 0px 15px 20px rgba(121, 149, 37, 0.4);
+    background-color: #f7462f;
+    box-shadow: 0px 15px 20px rgba(192, 103, 19, 0.4);
     color: #fff;
     transform: translateY(-7px);
 }
@@ -464,7 +425,7 @@ span{
     letter-spacing: 2px;
     font-weight: 500;
     color: #000;
-    background-color: #5783db;
+    background-color: #ff725e;
     border: none;
     border-radius: 45px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
@@ -474,8 +435,8 @@ span{
 }
 
 .features2-button button:hover{
-    background-color: #ce8d23;
-    box-shadow: 0px 15px 20px rgba(121, 149, 37, 0.4);
+    background-color: #f7462f;
+    box-shadow: 0px 15px 20px rgba(192, 103, 19, 0.4);
     color: #fff;
     transform: translateY(-7px);
 }
@@ -503,7 +464,7 @@ span{
     background-position: center;
     position: absolute;
     left: 0;
-    transition: 0.3s ease all;
+    transition: 0.55s ease all;
 }
 
 .leftside{
@@ -573,8 +534,8 @@ span{
 }
 
 .price-col{
-    background: #333;
-    color: white;
+    background:#ed9304;
+    color: #333;
     padding: 5% 50px;
     margin-bottom: 50px;
     border-radius: 10px;
@@ -590,13 +551,13 @@ span{
 .price-col h3{
     font-size: 44px;
     font-weight: 500;
-    color: white;
+    color: #333;
 }
 
 .price-col ul{
     text-align: left;
     margin: 20px 0;
-    color: #ddd;
+    color: #070707; /*contrast is bad?*/
 }
 
 .price-col ul li{
@@ -605,7 +566,7 @@ span{
 
 .price-col ul li::before{
     content: "\2022";
-    color: #e33058;
+    color: #333;
     font-weight: bold;
     margin: 8px;
 }
@@ -616,7 +577,7 @@ span{
     background: transparent;
     color: white;
     font-size: 15px;
-    border: 1px solid #e33058;
+    border: 2px solid #643c68;
     border-radius: 40px;
     margin-top: 30px;
     cursor: pointer;
@@ -624,12 +585,20 @@ span{
 }
 
 .price-col button:hover{
-    background: #e33058;
+    background: #82408e;
+}
+
+.box1{
+    background-color: #f3ad01;
 }
 
 .box2{
-    background-color: rgb(7, 49, 6);
+    background-color: #ab1522de;
     scale: 1.1;
+}
+
+.box3{
+    background-color: #e3421c; 
 }
 
 .price-col:hover{
@@ -694,7 +663,7 @@ footer .social{
 
 footer .social a{
     font-size: 24px;
-    color: #e33058;
+    color: #e3421c;
     border: 1px solid #ccc;
     width: 40px;
     height: 40px;
@@ -746,6 +715,135 @@ footer .copyright{
     color: #aaa;
 }
 
+/*Second page of website: History*/
+
+.timeline-container{
+    margin: 0;
+    font-family: sans-serif;
+    padding: 2em;
+}
+
+.timeline-container::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: fixed;
+}
+
+.timeline-container *{
+    margin: 0;
+    padding: 0;
+}
+
+.timeline_checkpoint{
+    margin-bottom: 15px;
+}
+
+.timeline_checkpoint h3{
+    text-align: center;
+    font-size: 30px;
+    letter-spacing:1px;
+    font-family:"Playfair Display", serif;
+}
+
+.timeline_checkpoint p{
+    line-height: 27px;
+    font-size: 18px;
+}
+
+.timeline{
+    margin: 5em auto;
+    max-width: 34.15em;
+}
+
+.timeline_checkpoint{
+    max-width: 34em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    position: relative;
+}
+
+.timeline_checkpoint div{
+    border: 2px solid #333;
+    border-radius: 1em;
+    padding: 1.5em;
+    transition: 0.3s ease all;
+}
+
+.timeline_checkpoint div:hover{
+    scale: 105%;
+}
+
+.timeline_checkpoint:nth-child(odd){
+    border-left: 3px solid #333;
+    padding-left: 3em;
+    transform: translateX(17em);
+}
+
+.timeline_checkpoint:nth-child(even){
+    border-right: 3px solid #333;
+    padding-right: 3em;
+    transform: translate(-16.8em);
+}
+
+.timeline_checkpoint:nth-child(odd)::before, .timeline_checkpoint:nth-child(even)::before{
+    content: "";
+    background: #333;
+    width: 3em;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.timeline_checkpoint:nth-child(odd)::before{
+    left: 0;
+}
+
+.timeline_checkpoint:nth-child(even)::before{
+    right: 0;
+}
+
+.timeline_checkpoint:nth-child(odd) div::before, .timeline_checkpoint:nth-child(even) div::before{
+    content: "";
+    background: black;
+    box-shadow: 0 0 0.3em #962610;
+    width: 0.8em;
+    height: 0.8em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.timeline_checkpoint:nth-child(odd) div::before{
+    left: -0.5em;
+}
+
+
+.timeline_checkpoint:nth-child(even) div::before{
+    right: -0.5em;
+}
+
+.timeline_checkpoint img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+}
+
+.timeline_checkpoint:nth-child(odd) div:hover{
+    background: rgb(181, 68, 11); /*fix hover color*/
+}
+
+.timeline_checkpoint:nth-child(even) div:hover{
+    background: rgb(184, 91, 19);
+}
+
 /*Responsive*/
 
 @media screen and (min-width:1330px){
@@ -785,7 +883,35 @@ footer .copyright{
     }
 }
 
-@media screen and (min-width:1200px){
+@media screen and (max-width: 1150px){
+    .timeline{
+        width: 80vw;
+    }
+
+    .timeline .timeline_checkpoint{
+        width: 100%;
+        transform: none;
+        padding-left: 0;
+        padding-right: 0;
+        border: none;
+    }
+
+    .timeline .timeline_checkpoint::before{
+        width: 3px;
+        height: 4em;
+        top: -2em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .timeline .timeline_checkpoint div::before{
+        top: -0.5em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (min-width: 1200px){
     /*del 4*/
     .info-container-3{
         display: flex;
@@ -811,7 +937,7 @@ footer .copyright{
     }
 
     .price-col ul li::before{
-        margin-left: 28px;
+        margin-left: 18px;
     }
 
 }
@@ -882,7 +1008,7 @@ footer .copyright{
 
     nav ul li a:hover{
         background: none;
-        color: aquamarine;
+        color: rgb(233, 124, 0);
     }
 
     #check:checked ~ul{
