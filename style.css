@@ -836,12 +836,81 @@ footer .copyright{
     margin: 15px auto;
 }
 
-.timeline_checkpoint:nth-child(odd) div:hover{
-    background: rgb(181, 68, 11); /*fix hover color*/
+.timeline_checkpoint div:hover{
+    background: lightgray; /*fix hover color*/
 }
 
-.timeline_checkpoint:nth-child(even) div:hover{
-    background: rgb(184, 91, 19);
+/* Third page of website: Preparations */
+
+.preparations-flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 2000px;
+}
+
+.preparations-flex-row{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.preparations-flex-item{
+    flex: 0 0 calc(25% - 10px);
+    margin-bottom: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: 0.3s ease all;
+}
+
+.preparations-flex-item:hover{
+    scale: 1.1;
+}
+
+.preparations-flex-item img{
+    max-width: 100%;
+    border-radius: 50%;
+    height: auto;
+}
+
+.preparations-flex-item h3{
+    font-size: 25px;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+.preparations-flex-item p{
+    font-size: 1.2em;
+    margin: 1.1em;
+    padding: 20px;
+}
+
+/* Gallery */
+
+.preparations-gallery-container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 8%;
+    scale: 0.8; opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 300px;
+}
+
+.preparations-gallery-images{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.preparations-gallery-images img{
+    width: 100%;
 }
 
 /*Responsive*/
@@ -874,7 +943,8 @@ footer .copyright{
         position: absolute;
         right: 0;
         bottom: -1450px;
-    }    
+    }   
+
 }
 
 @media screen and (max-width: 1330px){
@@ -909,6 +979,30 @@ footer .copyright{
         left: 50%;
         transform: translateX(-50%);
     }
+
+    /*Page 3 */
+
+    .preparations-flex-row{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+
+    .preparations-flex-item{
+        flex: 0 0 clac(100%-10px);
+    }
+
+    .preparations-flex-item img{
+        max-width: 50%;
+        height: auto;
+    }
+
+    .preparations-flex-item h3{
+        margin-bottom: -15px;
+    }
+
 }
 
 @media screen and (min-width: 1200px){
@@ -1071,4 +1165,7 @@ footer .copyright{
     .price-col p{
         text-align: center;
     }
+
+
+
 }
