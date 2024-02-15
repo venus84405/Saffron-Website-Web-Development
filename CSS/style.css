@@ -580,6 +580,7 @@ nav ul li a:hover{
 
 .price-col ul li{
     margin: 15px 0;
+    font-size: 20px;
     color: white;
 }
 
@@ -1005,6 +1006,16 @@ footer .copyright{
 .stars{
     color: #e3421c;
     margin-bottom: 20px;
+}
+
+/*Resources site*/
+
+iframe{
+    display: block;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    border: 2px solid black;
 }
 
 /*Responsive*/
