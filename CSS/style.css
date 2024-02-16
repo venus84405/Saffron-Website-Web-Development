@@ -40,7 +40,7 @@ nav{
 label img{
     height: 80px;
     width: auto;
-    mix-blend-mode: color-burn;
+    
     margin-left: 20px;
     
 }
@@ -345,6 +345,7 @@ nav ul li a:hover{
     margin-top: -40px;
 }
 
+
 .features1-button button, .features3-button button{
     width: 140px;
     height: 45px;
@@ -525,11 +526,11 @@ nav ul li a:hover{
 
 /*Del 5 av webbsidan: plans and price*/
 
-.info-container-4-header{
+.info-container-header{
     margin-top: 35px;
 }
 
-.info-container-4-header p{
+.info-container-header p{
     margin-top: 10px;
     text-align: center;
     max-width: 600px;
@@ -580,7 +581,6 @@ nav ul li a:hover{
 
 .price-col ul li{
     margin: 15px 0;
-    font-size: 20px;
     color: white;
 }
 
@@ -1197,7 +1197,7 @@ iframe{
         left: -100%;
         text-align: center;
         transition: all .5s;
-        z-index: 1000;
+        z-index: 10;
     }
 
     nav ul li{
@@ -1268,7 +1268,7 @@ iframe{
     
     /*Plans and price*/
 
-    .info-container-4-header p{
+    .info-container-header p{
         margin-bottom: 40px;
     }
 
