@@ -22,7 +22,7 @@ body{
 .banner{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.6)),url(/Images/background/background.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.6)),url(../Images/background/background.jpg);
     background-size: cover;
     background-position: center;
     animation: banner-image-animation linear forwards;
@@ -481,11 +481,11 @@ nav ul li a:hover{
 }
 
 .leftside{
-    background: url("/Images/main/split_left_image.jpg");
+    background: url("../Images/main/split_left_image.jpg");
 }
 
 .rightside{
-    background: url("/Images/main/split_right_image_alt.jpg");
+    background: url("../Images/main/split_right_image_alt.jpg");
 }
 
 .info-container-3 .side::before{
@@ -1186,7 +1186,7 @@ iframe{
     .banner{
         width: 100%;
         height: 100vh;
-        background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.6)),url(/Images/background/background.jpg);
+        background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.6)),url(../Images/background/background.jpg);
         background-size: cover;
         background-position: center;
         animation: banner-image-animation linear forwards;
